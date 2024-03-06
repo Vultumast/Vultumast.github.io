@@ -1,0 +1,57 @@
+
+.div-main {
+    border: none;
+    width: 100%;
+    /* outline: 4px;
+    outline-style: solid;
+    outline-color: green; */
+}
+
+.tab-main {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 10%;
+    border: none;
+}
+
+.tab-main button {
+    display: block;
+    border: none;
+    color: white;
+    background: #512B81;
+    width: 100%;
+
+    /* outline: 2px;
+    outline-style: solid;
+    outline-color: red; */
+}
+
+.tab-main button:hover {
+    background: #8CABFF;
+}
+
+.tab-main button:active {
+    background: #4477CE;
+}
+
+.tab-content, .tab-content:target ~ .tab-content:last-child {
+    display: none;
+}
+
+.tab-content:last-child, .tab-content:target {
+    display: block;
+}
+
+.div-content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    margin-left: 11%;
+    width: 89%;
+    /* outline: 2px;
+    outline-style: solid;
+    outline-color: white; */
+}
